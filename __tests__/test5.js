@@ -1,6 +1,6 @@
 const timeout = 50000;
 jest.setTimeout(timeout);
-describe(  '/ (Home Page)',  () => {
+describe(  'Home Page',  () => {
     let page
     beforeAll(async () => {
       page = await global.__BROWSER__.newPage();
