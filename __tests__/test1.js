@@ -1,4 +1,4 @@
-const timeout = 5000
+const timeout = 50000;
 
 describe(  '/ (Home Page)',  () => {
     let page;
