@@ -1,5 +1,5 @@
 const timeout = 50000;
-
+jest.setTimeout(timeout);
 describe(  '/ (Home Page)',  () => {
     let page;
     beforeAll(async () => {
