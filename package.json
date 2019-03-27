@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors --maxWorkers=2"
   },
   "devDependencies": {
     "jest": "^24.1.0",

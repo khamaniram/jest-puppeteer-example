@@ -4,7 +4,7 @@ describe(  '/ (Home Page)',  () => {
     let page
     beforeAll(async () => {
       page = await global.__BROWSER__.newPage()
-      await page.goto('https://google.com')
+      await page.goto('https://google.com',{ timeout: 0});
     }, timeout);
 
     afterAll(async () => {
