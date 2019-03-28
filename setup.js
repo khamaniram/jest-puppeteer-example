@@ -9,16 +9,15 @@ const DIR = path.join(os.tmpdir(), 'jest_puppeteer_global_setup')
 
 module.exports = async function() {
   console.log(chalk.green(':Start'));
-  let headless = true;
+  let headless = false;
   let options = {
     headless : headless,
-    fullScreen : true,
-    slowMo : false,
     timeout : 10000
   };
   if( headless ){
     options.args = [
-     // '--no-sandbox', 
+      '--start-maximized',
+      '--no-sandbox', 
       '--proxy-server="direct://"', 
       '--proxy-bypass-list=*',
       '--disable-gpu',
