@@ -3,7 +3,10 @@ module.exports = {
   globalTeardown: './teardown.js',
   testEnvironment: './puppeteer_environment.js',
   reporters: [
+  //  "default",
     "jest-spec-reporter",
-    "jest-html-reporters"
+   // "jest-mocha-reporter"
+    //"jest-html-reporters",
+    //"jest-stare"
   ],
 }
